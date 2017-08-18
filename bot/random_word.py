@@ -35,6 +35,4 @@ def get_random_word(**kwargs):
         return json['word'].lower()
     except KeyError:
         # Wordnik API returns errors of the form {message: 'Something went wrong', type: 'error'}
-        logging.error('Wordnik API error at URL: %s \nError: %s', r.url, json['message'])
-    except Exception as e:
-        logging.error(e)
+        raise Exception('Wordnik API error at URL: %s \nError: %s', r.url, json['message'])
