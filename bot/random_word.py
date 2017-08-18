@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-""" This module contains functions for obtaining a random word. """
+""" This module contains a function that returns a random word. """
 
 from config import WORDNIK_KEY
 import requests
