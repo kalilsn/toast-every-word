@@ -3,7 +3,7 @@ chardet==3.0.4
 idna==2.6
 oauthlib==2.0.2
 olefile==0.44
-Pillow==4.2.1
+Pillow==8.2.0
 py==1.4.34
 pytest==3.2.1
 requests==2.18.4
